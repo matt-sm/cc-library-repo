@@ -1,0 +1,8 @@
+cc_test(
+    name = "cross_package_integration_test",
+    size = "small",
+    srcs = ["cross_package_integration_test.cpp"],
+    deps = [
+        "//thirdparty/xxHash:xxhash",
+    ],
+)

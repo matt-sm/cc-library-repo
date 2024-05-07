@@ -1,0 +1,8 @@
+# Bazel
+/bazel-bin
+/bazel-helper.exe
+/bazel-main
+/bazel-out
+/bazel-cc-library-repo
+/bazel-testlogs
+/.bazelrc.user

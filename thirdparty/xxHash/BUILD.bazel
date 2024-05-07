@@ -1,0 +1,20 @@
+cc_library(
+    name = "xxhash",
+    srcs = [
+        "@xxHash//:xxhash.c",
+    ],
+    hdrs = [
+        "@xxHash//:xxhash.h",
+    ],
+    strip_include_prefix = "",
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "xxhsum",
+    srcs = ["@xxHash//:xxhsum.c"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":xxhash",
+    ],
+)

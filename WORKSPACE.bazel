@@ -1,0 +1,6 @@
+workspace(name = "cc-library-repo")
+
+# Load repositories after loading all other dependencies required for our macros
+load("//thirdparty:repositories.bzl", thirdparty_repositories = "repositories")
+
+thirdparty_repositories()
